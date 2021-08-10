@@ -14,7 +14,7 @@ users = response['members']
 
 for user in users:
   if "email" in user["profile"]:
-    print(user["profile"]["email"])
+    print(user["profile"]["real_name"] + ',' + user["profile"]["email"])
 
 
 # slack_users_list = open('slack_users_list.csv', 'w') 
